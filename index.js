@@ -19,6 +19,7 @@ app.get('/test-image', (req, res) => {
 
 // GETリクエスト
 app.get('/', (req, res) => {
+
   res.send({
     msg:'GET request'
   });
@@ -45,8 +46,4 @@ app.delete('/:id', (req, res) => {
     id: req.params.id,
     msg:'DELETE request'
   });
-});
-
-app.listen(3000, () => {
-  console.log('Server started on port 3000');
 });
