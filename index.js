@@ -24,3 +24,15 @@ app.put('/:id', (req, res) => {
   });
 });
 
+// DELETEリクエスト
+app.delete('/:id', (req, res) => {
+  res.send({
+    id: req.params.id,
+    msg:'DELETE request'
+  });
+});
+
+app.listen(3000, () => {
+  console.log('Server started on port 3000');
+});
+
